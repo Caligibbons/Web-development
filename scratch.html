@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Scratch Page</title>
-<link rel="stylesheet" href="css/scratch.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <title>Scratch Page</title>
+
+  <!-- link to YOUR handmade stylesheet -->
+  <link rel="stylesheet" href="css/scratch.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-<h1>My Scratch Page</h1>
-<ol>
- <li>Fruits
-  <ul>
-   <li>Apple</li><li>Banana</li><li>Cherry</li>
-  </ul>
- </li>
- <li>Vegetables</li>
-</ol>
 
-<h2 id="gallery">Gallery</h2>
-<img src="https://picsum.photos/400" alt="Random" width="400">
+  <!-- Page heading -->
+  <h1 id="top">My Scratch Page</h1>
 
-<h2>Favorite Video</h2>
-<iframe width="500" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+  <!-- Ordered list that contains an unordered list -->
+  <ol>
+    <li>Fruits
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+      </ul>
+    </li>
+    <li>Vegetables</li>
+  </ol>
 
- <!-- Your Tableau graph -->
+  <!-- Three styled DIV blocks -->
+  <div class="card">
+    <h2>Block 1</h2>
+    <p>This is the first content block.</p>
+  </div>
+
+  <div class="card">
+    <h2 id="gallery">Block 2 — Gallery</h2>  <!-- anchor target -->
+    <img src="https://picsum.photos/400" alt="Random placeholder" width="400" />
+  </div>
+
+  <div class="card">
+    <h2>Block 3 — Embedded YouTube Video</h2>
+    <iframe width="500" height="315"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="YouTube video" allowfullscreen></iframe>
+  </div>
+
+  <!-- Your Tableau graph -->
   <h2>How Do Years of Experience Affect Annual Salary?</h2>
   <div class="tableauPlaceholder" id="viz1745437186100" style="position: relative">
     <noscript>
@@ -57,11 +78,14 @@
     var scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
- 
   </script>
-<p><a href="app.html">Play my Joke Generator</a></p>
-<p><a href="#top" class="anchor-link">Back to top</a></p>
-<p><a href="index.html">Return to main site</a></p>
+
+  <!-- Link to your AI web app -->
+  <p><a href="app.html">Try my Joke Generator App</a></p>
+
+  <!-- Navigation links -->
+  <p><a href="#top" class="anchor-link">Back to top</a></p>
+  <p><a href="index.html">Return to professional site</a></p>
 
 </body>
 </html>
